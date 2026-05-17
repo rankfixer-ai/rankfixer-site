@@ -1,259 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RankFixer — Managed Filipino Virtual Assistants Built for Reliability</title>
-    <meta name="description" content="RankFixer provides facility-based Filipino virtual assistants trained in AI workflows and supervised by an on-site operations team — with backup internet, backup power, and structured accountability systems." />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>RankFixer — Managed Filipino Virtual Assistants Built for Reliability</title>
+  <meta name="description" content="RankFixer provides facility-based Filipino virtual assistants from a 200-seat TESDA-accredited center in Bislig City. Backup internet, backup power, AI-trained staff, and on-site management — built for operational reliability." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rankfixer.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rankfixer.com/" />
+  <meta property="og:title" content="RankFixer — Managed Filipino Virtual Assistants Built for Reliability" />
+  <meta property="og:description" content="Facility-based Filipino VAs with redundant internet, backup power, and on-site management. Built for businesses that can't afford operational downtime." />
+  <meta property="og:image" content="https://rankfixer.com/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RankFixer — Managed Filipino Virtual Assistants" />
+  <meta name="twitter:description" content="200-seat facility in Bislig City. Dual ISP, backup generator, TESDA-accredited training, on-site oversight." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RankFixer",
+    "url": "https://rankfixer.com",
+    "description": "Managed Filipino virtual assistants from a 200-seat TESDA-accredited facility in Bislig City, Philippines.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bislig City",
+      "addressRegion": "Surigao del Sur",
+      "addressCountry": "PH"
+    },
+    "serviceType": "Managed Virtual Assistant Services",
+    "areaServed": "Worldwide",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-92QPK9G2F0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-92QPK9G2F0');
+  </script>
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur">
-        <div class="container-base flex h-20 items-center justify-between">
-            <a href="/" class="font-serif text-2xl font-bold tracking-tight text-text no-underline">
-                Rank<span class="text-accent">Fixer</span>
-            </a>
-            <nav class="flex items-center gap-7">
-                <a href="/guides/managed-vs-freelance-virtual-assistant-philippines.html" class="text-sm font-semibold text-muted no-underline transition hover:text-text">
-                    Managed vs Freelance
-                </a>
-                <a href="/guides/filipino-va-cost-pricing-guide.html" class="text-sm font-semibold text-muted no-underline transition hover:text-text">
-                    Pricing
-                </a>
-                <a href="/about.html" class="text-sm font-semibold text-muted no-underline transition hover:text-text">
-                    About
-                </a>
-                <a href="/contact.html" class="primary-btn">
-                    Book a Consultation
-                </a>
-            </nav>
-        </div>
-    </header>
+<!-- ═══════════════════════════════════════
+     HEADER
+════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">Rank<span>Fixer</span></a>
 
-    <!-- Hero -->
-    <section class="section-spacing">
-        <div class="container-base grid items-center gap-14 lg:grid-cols-2">
-            <div>
-                <div class="eyebrow mb-6">Reliability-First Offshore Staffing</div>
-                <h1 class="max-w-4xl text-5xl leading-none text-text md:text-7xl">
-                    Managed Filipino Virtual Assistants Built for Operational Reliability
-                </h1>
-                <p class="mt-8 max-w-2xl text-lg leading-8 text-muted">
-                    RankFixer provides facility-based Filipino virtual assistants trained in AI workflows and supervised by an on-site operations team — with backup internet, backup power, and structured accountability systems.
-                </p>
-                <div class="mt-10 flex flex-wrap gap-4">
-                    <a href="/contact.html" class="primary-btn">Book a Consultation</a>
-                    <a href="/guides/managed-vs-freelance-virtual-assistant-philippines.html" class="secondary-btn">Explore the Managed Model</a>
-                </div>
-                <div class="mt-10 flex flex-wrap gap-3">
-                    <div class="rounded-full border border-border bg-surface px-4 py-2 text-sm font-semibold text-muted">Facility-Based Operations</div>
-                    <div class="rounded-full border border-border bg-surface px-4 py-2 text-sm font-semibold text-muted">Backup Internet</div>
-                    <div class="rounded-full border border-border bg-surface px-4 py-2 text-sm font-semibold text-muted">AI Workflow Training</div>
-                </div>
-            </div>
-            <div class="card-base p-8 lg:p-10">
-                <div class="mb-8 flex items-center justify-between">
-                    <div>
-                        <div class="text-sm font-semibold text-muted">Operations Infrastructure</div>
-                        <div class="mt-2 text-2xl font-bold text-text">Systems Operational</div>
-                    </div>
-                    <div class="rounded-full bg-green-50 px-4 py-2 text-xs font-bold text-green-700">LIVE</div>
-                </div>
-                <div class="grid gap-4 sm:grid-cols-2">
-                    <div class="rounded-2xl border border-border bg-bg p-5">
-                        <div class="text-sm text-muted">Connectivity</div>
-                        <div class="mt-2 text-lg font-bold text-text">Redundant Internet</div>
-                    </div>
-                    <div class="rounded-2xl border border-border bg-bg p-5">
-                        <div class="text-sm text-muted">Power Systems</div>
-                        <div class="mt-2 text-lg font-bold text-text">Backup Ready</div>
-                    </div>
-                    <div class="rounded-2xl border border-border bg-bg p-5">
-                        <div class="text-sm text-muted">Workflow Oversight</div>
-                        <div class="mt-2 text-lg font-bold text-text">On-Site Management</div>
-                    </div>
-                    <div class="rounded-2xl border border-border bg-bg p-5">
-                        <div class="text-sm text-muted">Productivity Stack</div>
-                        <div class="mt-2 text-lg font-bold text-text">AI Integrated</div>
-                    </div>
-                </div>
-                <div class="mt-8 border-t border-border pt-6 text-sm leading-7 text-muted">
-                    Structured onboarding, operational accountability, and continuity systems designed for long-term business support.
-                </div>
-            </div>
-        </div>
-    </section>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-    <!-- Comparison -->
-    <section id="comparison" class="section-spacing">
-        <div class="container-base">
-            <div class="mb-14 max-w-[760px]">
-                <div class="eyebrow mb-4">Operational Comparison</div>
-                <h2 class="text-[clamp(36px,4vw,52px)] leading-[1.08] mb-5">Most Outsourcing Problems Are Infrastructure Problems</h2>
-                <p class="text-lg text-muted">Businesses rarely fail with outsourcing because workers lack skills. Most failures come from inconsistent systems, weak accountability, and operational instability.</p>
-            </div>
-            <div class="card-base overflow-hidden rounded-3xl">
-                <table class="w-full border-collapse">
-                    <thead>
-                        <tr>
-                            <th class="text-left bg-[#FCFCFA] px-7 py-5 text-sm text-muted border-b border-border font-semibold">Operational Factor</th>
-                            <th class="text-left bg-[#FCFCFA] px-7 py-5 text-sm text-muted border-b border-border font-semibold">Typical Freelancers</th>
-                            <th class="text-left bg-[#FCFCFA] px-7 py-5 text-sm text-muted border-b border-border font-semibold">RankFixer</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-medium">Internet Reliability</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] text-muted">Unpredictable</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-bold text-text">Redundant Infrastructure</td>
-                        </tr>
-                        <tr>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-medium">Power Continuity</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] text-muted">Variable</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-bold text-text">Backup Systems</td>
-                        </tr>
-                        <tr>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-medium">Operational Oversight</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] text-muted">Self-Managed</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-bold text-text">On-Site Management</td>
-                        </tr>
-                        <tr>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-medium">AI Workflow Training</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] text-muted">Inconsistent</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-bold text-text">Structured Training</td>
-                        </tr>
-                        <tr>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-medium">Replacement Continuity</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] text-muted">Unreliable</td>
-                            <td class="px-7 py-6 border-b border-border text-[15px] font-bold text-text">Managed Support</td>
-                        </tr>
-                        <tr>
-                            <td class="px-7 py-6 text-[15px] font-medium">Accountability Systems</td>
-                            <td class="px-7 py-6 text-[15px] text-muted">Varies</td>
-                            <td class="px-7 py-6 text-[15px] font-bold text-text">Operationally Structured</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#comparison">Managed vs Freelance</a>
+      <a href="#infrastructure">Infrastructure</a>
+      <a href="guides/managed-vs-freelance.html">Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Book a Consultation</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Infrastructure -->
-    <section id="infrastructure" class="section-spacing">
-        <div class="container-base">
-            <div class="text-center max-w-[760px] mx-auto mb-14">
-                <div class="eyebrow mb-4">Reliability Infrastructure</div>
-                <h2 class="text-[clamp(36px,4vw,52px)] leading-[1.08] mb-5">Built for Operational Continuity</h2>
-                <p class="text-lg text-muted">RankFixer is designed around stability, supervision, and business continuity — not freelance unpredictability.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="card-base p-8 transition hover:-translate-y-0.5">
-                    <h3 class="font-serif text-xl font-semibold mb-3.5 text-text">Backup Internet</h3>
-                    <p class="text-[15px] text-muted leading-relaxed">Redundant internet systems maintain workflow continuity during outages and connectivity disruptions.</p>
-                </div>
-                <div class="card-base p-8 transition hover:-translate-y-0.5">
-                    <h3 class="font-serif text-xl font-semibold mb-3.5 text-text">Backup Power</h3>
-                    <p class="text-[15px] text-muted leading-relaxed">Managed operations continue even during regional interruptions through infrastructure redundancy.</p>
-                </div>
-                <div class="card-base p-8 transition hover:-translate-y-0.5">
-                    <h3 class="font-serif text-xl font-semibold mb-3.5 text-text">On-Site Oversight</h3>
-                    <p class="text-[15px] text-muted leading-relaxed">Structured supervision ensures communication consistency, accountability, and workflow alignment.</p>
-                </div>
-                <div class="card-base p-8 transition hover:-translate-y-0.5">
-                    <h3 class="font-serif text-xl font-semibold mb-3.5 text-text">AI-Trained Staff</h3>
-                    <p class="text-[15px] text-muted leading-relaxed">Virtual assistants trained to use modern AI tools and operational workflows efficiently.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Process -->
-    <section class="section-spacing">
-        <div class="container-base">
-            <div class="text-center max-w-[760px] mx-auto mb-14">
-                <div class="eyebrow mb-4">Structured Operations</div>
-                <h2 class="text-[clamp(36px,4vw,52px)] leading-[1.08] mb-5">A Managed Staffing Workflow</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                <div class="card-base p-7">
-                    <div class="text-accent text-[13px] font-extrabold tracking-wider mb-4">01</div>
-                    <h3 class="font-serif text-lg font-semibold mb-3 text-text">Discovery</h3>
-                    <p class="text-sm text-muted leading-relaxed">Understand workflows, bottlenecks, and operational objectives.</p>
-                </div>
-                <div class="card-base p-7">
-                    <div class="text-accent text-[13px] font-extrabold tracking-wider mb-4">02</div>
-                    <h3 class="font-serif text-lg font-semibold mb-3 text-text">Assessment</h3>
-                    <p class="text-sm text-muted leading-relaxed">Identify delegation opportunities and process requirements.</p>
-                </div>
-                <div class="card-base p-7">
-                    <div class="text-accent text-[13px] font-extrabold tracking-wider mb-4">03</div>
-                    <h3 class="font-serif text-lg font-semibold mb-3 text-text">VA Matching</h3>
-                    <p class="text-sm text-muted leading-relaxed">Match businesses with operationally aligned support staff.</p>
-                </div>
-                <div class="card-base p-7">
-                    <div class="text-accent text-[13px] font-extrabold tracking-wider mb-4">04</div>
-                    <h3 class="font-serif text-lg font-semibold mb-3 text-text">Onboarding</h3>
-                    <p class="text-sm text-muted leading-relaxed">Implement workflows, reporting systems, and SOP structures.</p>
-                </div>
-                <div class="card-base p-7">
-                    <div class="text-accent text-[13px] font-extrabold tracking-wider mb-4">05</div>
-                    <h3 class="font-serif text-lg font-semibold mb-3 text-text">Oversight</h3>
-                    <p class="text-sm text-muted leading-relaxed">Maintain continuity through supervision and operational management.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ═══════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero" aria-label="Hero">
+  <div class="container hero-grid">
 
-    <!-- Guides -->
-    <section id="guides" class="section-spacing">
-        <div class="container-base">
-            <div class="mb-14 max-w-[760px]">
-                <div class="eyebrow mb-4">Guides & Resources</div>
-                <h2 class="text-[clamp(36px,4vw,52px)] leading-[1.08] mb-5">Educational Resources for Business Owners</h2>
-                <p class="text-lg text-muted">Content designed to help businesses build more reliable remote operational systems.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <a href="/guides/managed-vs-freelance-virtual-assistant-philippines.html" class="card-base p-8 no-underline transition hover:-translate-y-0.5 hover:border-[#D8D4CF] block">
-                    <h3 class="font-serif text-[22px] font-semibold leading-tight mb-3.5 text-text">Managed vs Freelance Virtual Assistants</h3>
-                    <p class="text-muted text-[15px]">Understand the operational differences between freelancers and managed staffing systems.</p>
-                </a>
-                <a href="/guides/filipino-va-cost-pricing-guide.html" class="card-base p-8 no-underline transition hover:-translate-y-0.5 hover:border-[#D8D4CF] block">
-                    <h3 class="font-serif text-[22px] font-semibold leading-tight mb-3.5 text-text">The Real Cost of Offshore Staffing</h3>
-                    <p class="text-muted text-[15px]">Learn how businesses should evaluate outsourcing beyond hourly rates.</p>
-                </a>
-                <a href="/guides/ai-powered-virtual-assistants.html" class="card-base p-8 no-underline transition hover:-translate-y-0.5 hover:border-[#D8D4CF] block">
-                    <h3 class="font-serif text-[22px] font-semibold leading-tight mb-3.5 text-text">AI Workflows for Remote Teams</h3>
-                    <p class="text-muted text-[15px]">Explore how AI-enhanced operations improve productivity and delegation.</p>
-                </a>
-            </div>
-        </div>
-    </section>
+    <div class="hero-copy animate-fade-up">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Reliability-First Offshore Staffing
+      </div>
 
-    <!-- CTA -->
-    <section id="contact" class="pb-28 pt-12">
-        <div class="container-base">
-            <div class="card-base p-16 md:p-20 text-center rounded-3xl">
-                <div class="eyebrow mb-6">Managed Operational Support</div>
-                <h2 class="text-[clamp(36px,4vw,52px)] leading-[1.08] mb-5 max-w-[760px] mx-auto">Build a More Reliable Remote Team</h2>
-                <p class="text-lg text-muted max-w-[680px] mx-auto mb-9">Discuss your workflows, operational challenges, and staffing requirements with RankFixer.</p>
-                <a href="/contact.html" class="primary-btn text-base px-8 py-5">Book a Consultation</a>
-            </div>
-        </div>
-    </section>
+      <h1>Managed Filipino Virtual Assistants Built for Operational Reliability</h1>
 
-    <!-- Footer -->
-    <footer class="border-t border-border py-9 bg-[#FCFCFA]">
-        <div class="container-base flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left">
-            <p class="text-muted text-sm">© 2026 RankFixer. Managed operational support built for reliability.</p>
-            <nav class="flex gap-5">
-                <a href="/about.html" class="text-muted text-sm font-semibold no-underline hover:text-text transition">About</a>
-                <a href="/guides/" class="text-muted text-sm font-semibold no-underline hover:text-text transition">Guides</a>
-                <a href="/contact.html" class="text-muted text-sm font-semibold no-underline hover:text-text transition">Contact</a>
-            </nav>
-        </div>
-    </footer>
+      <p class="section-lead">
+        RankFixer provides facility-based Filipino VAs from a 200-seat TESDA-accredited center in Bislig City — with redundant internet, backup power, AI-trained workflows, and on-site management.
+      </p>
 
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Book a Consultation →</a>
+        <a href="#comparison" class="btn-secondary">Explore the Managed Model</a>
+      </div>
+
+      <div class="trust-pills">
+        <span class="trust-pill">200-Seat Facility</span>
+        <span class="trust-pill">Dual ISP Redundancy</span>
+        <span class="trust-pill">Backup Generator</span>
+        <span class="trust-pill">AI Workflow Training</span>
+        <span class="trust-pill">TESDA-Accredited</span>
+      </div>
+    </div>
+
+    <div class="hero-panel animate-fade-up delay-2">
+      <div class="panel-header">
+        <div class="panel-title">Operations Infrastructure</div>
+        <div class="status-badge">Systems Operational</div>
+      </div>
+
+      <div class="ops-grid">
+        <div class="ops-card">
+          <div class="ops-label">Connectivity</div>
+          <div class="ops-value">Dual ISP Fiber</div>
+        </div>
+        <div class="ops-card">
+          <div class="ops-label">Power Systems</div>
+          <div class="ops-value">Auto-Failover Generator</div>
+        </div>
+        <div class="ops-card">
+          <div class="ops-label">Oversight</div>
+          <div class="ops-value">On-Site Management</div>
+        </div>
+        <div class="ops-card">
+          <div class="ops-label">Productivity Stack</div>
+          <div class="ops-value">AI Integrated</div>
+        </div>
+      </div>
+
+      <div class="ops-note">
+        TESDA-accredited training center in Bislig City, Philippines. Structured onboarding, operational accountability, and business continuity systems built for long-term support.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     STATS STRIP
+════════════════════════════════════════ -->
+<div class="stats-strip" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">200<span>+</span></div>
+        <div class="stat-label">Seat Facility Capacity</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">2<span>x</span></div>
+        <div class="stat-label">ISP Redundancy</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">0<span>min</span></div>
+        <div class="stat-label">Avg Downtime Per Incident</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">60<span>%+</span></div>
+        <div class="stat-label">Cost Savings vs US Hire</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════
+     COMPARISON
+════════════════════════════════════════ -->
+<section id="comparison" aria-labelledby="comparison-heading">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Operational Comparison
+      </div>
+      <h2 id="comparison-heading">Most Outsourcing Failures Are Infrastructure Failures</h2>
+      <p class="section-lead">
+        Businesses don't fail with outsourcing because workers lack skills. Most failures come from inconsistent systems, zero accountability, and operational instability that home-based freelancers simply can't solve.
+      </p>
+    </div>
+
+    <div class="comparison-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Operational Factor</th>
+            <th>Typical Freelancers</th>
+            <th>RankFixer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Internet Reliability</strong></td>
+            <td>Single residential ISP, no backup</td>
+            <td class="td-check">Dual ISP fiber with automatic failover</td>
+          </tr>
+          <tr>
+            <td><strong>Power Continuity</strong></td>
+            <td>Grid only — outages cause full downtime</td>
+            <td class="td-check">Generator + UPS, seamless transition</td>
+          </tr>
+          <tr>
+            <td><strong>Operational Oversight</strong></td>
+            <td>Self-managed, no accountability</td>
+            <td class="td-check">On-site managers, daily oversight</td>
+          </tr>
+          <tr>
+            <td><strong>Moonlighting Risk</strong></td>
+            <td>High — undetectable at home</td>
+            <td class="td-check">Impossible in supervised office</td>
+          </tr>
+          <tr>
+            <td><strong>Ghosting Risk</strong></td>
+            <td>Common — no recourse</td>
+            <td class="td-check">Near zero — guaranteed replacement</td>
+          </tr>
+          <tr>
+            <td><strong>AI Workflow Training</strong></td>
+            <td>Self-taught, inconsistent</td>
+            <td class="td-check">TESDA-accredited, structured training</td>
+          </tr>
+          <tr>
+            <td><strong>Replacement Continuity</strong></td>
+            <td>Restart hiring from scratch</td>
+            <td class="td-check">Backup staff deployed within days</td>
+          </tr>
+          <tr>
+            <td><strong>Data Security</strong></td>
+            <td>Uncontrolled home network</td>
+            <td class="td-check">Managed network, physical security</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     INFRASTRUCTURE
+════════════════════════════════════════ -->
+<section id="infrastructure" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="infra-heading">
+  <div class="container">
+
+    <div class="section-heading center">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Reliability Infrastructure
+      </div>
+      <h2 id="infra-heading">Built for Operational Continuity</h2>
+      <p class="section-lead">
+        RankFixer is designed around stability, supervision, and business continuity — not freelance unpredictability. Every system has a backup. Every VA has a manager.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌐</div>
+        <h3>Dual ISP Redundancy</h3>
+        <p>Two independent fiber ISP connections with automatic failover. When one provider goes down, traffic switches instantly — your VA never goes offline.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Backup Generator + UPS</h3>
+        <p>A backup generator auto-starts within seconds of grid failure. UPS units bridge the gap. During Philippine typhoon season, operations continue without interruption.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👁</div>
+        <h3>On-Site Management</h3>
+        <p>Dedicated managers oversee attendance, productivity, and quality daily. Structured supervision that software-only tracking can never replicate.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤖</div>
+        <h3>AI-Trained Staff</h3>
+        <p>Every VA is trained on ChatGPT, Claude, Zapier, and modern automation tools before touching client work. TESDA-accredited, not self-taught.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     PROCESS
+════════════════════════════════════════ -->
+<section aria-labelledby="process-heading">
+  <div class="container">
+
+    <div class="section-heading center">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Structured Operations
+      </div>
+      <h2 id="process-heading">A Managed Staffing Workflow</h2>
+      <p class="section-lead">From first conversation to operational VA team — a structured, accountable process at every step.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="process-number">01</div>
+        <h3>Discovery</h3>
+        <p>Understand your workflows, bottlenecks, and operational objectives — before making any recommendation.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-number">02</div>
+        <h3>Assessment</h3>
+        <p>Identify the highest-value delegation opportunities and map the operational process requirements.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-number">03</div>
+        <h3>VA Matching</h3>
+        <p>Match your business with VAs who are operationally, technically, and culturally aligned to your workflows.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-number">04</div>
+        <h3>Onboarding</h3>
+        <p>Implement your workflows, reporting systems, and SOP structures with structured setup — typically 3–5 days.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-number">05</div>
+        <h3>Oversight</h3>
+        <p>Maintain output quality through on-site supervision, performance reviews, and operational management.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     SOCIAL PROOF
+════════════════════════════════════════ -->
+<section style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);" aria-labelledby="proof-heading">
+  <div class="container">
+
+    <div class="section-heading center">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        What Clients Say
+      </div>
+      <h2 id="proof-heading">Operational Results That Matter</h2>
+    </div>
+
+    <div class="proof-grid">
+      <div class="proof-card">
+        <p class="proof-quote">We've tried three different freelancers from job boards. Ghosting, internet dropouts, inconsistent work. RankFixer solved every single one of those problems on day one.</p>
+        <div class="proof-author">
+          <div class="proof-avatar">J</div>
+          <div>
+            <div class="proof-name">Jason M.</div>
+            <div class="proof-role">Agency Owner, United States</div>
+          </div>
+        </div>
+      </div>
+      <div class="proof-card">
+        <p class="proof-quote">The facility model completely changes the dynamic. My VA is in an office, supervised, working my hours. The reliability is night and day versus what I had before.</p>
+        <div class="proof-author">
+          <div class="proof-avatar">S</div>
+          <div>
+            <div class="proof-name">Sarah K.</div>
+            <div class="proof-role">E-commerce Operator, Australia</div>
+          </div>
+        </div>
+      </div>
+      <div class="proof-card">
+        <p class="proof-quote">What I'm paying for isn't just the VA's time. I'm paying for the infrastructure, the management, and the guarantee that work will happen. That's worth every dollar.</p>
+        <div class="proof-author">
+          <div class="proof-avatar">D</div>
+          <div>
+            <div class="proof-name">David R.</div>
+            <div class="proof-role">Law Firm Director, Canada</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     GUIDES
+════════════════════════════════════════ -->
+<section id="guides" aria-labelledby="guides-heading">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Guides & Resources
+      </div>
+      <h2 id="guides-heading">Educational Resources for Business Owners</h2>
+      <p class="section-lead">In-depth guides to help you build more reliable offshore operations and make better outsourcing decisions.</p>
+    </div>
+
+    <div class="guides-grid">
+      <a href="guides/managed-vs-freelance.html" class="guide-card">
+        <span class="guide-tag">Operations</span>
+        <h3>Managed vs Freelance Virtual Assistants</h3>
+        <p>Understand the infrastructure, accountability, and operational differences between freelancers and a managed staffing model.</p>
+        <span class="guide-read-more">Read the guide →</span>
+      </a>
+      <a href="guides/filipino-va-pricing.html" class="guide-card">
+        <span class="guide-tag">Pricing</span>
+        <h3>How Much Does a Filipino VA Cost in 2026?</h3>
+        <p>A complete pricing guide covering hourly rates, monthly packages, managed vs freelance costs, and what's actually included.</p>
+        <span class="guide-read-more">Read the guide →</span>
+      </a>
+      <a href="guides/facility-vs-home.html" class="guide-card">
+        <span class="guide-tag">Infrastructure</span>
+        <h3>Facility-Based vs Home-Based Virtual Assistants</h3>
+        <p>Why infrastructure is the defining factor in offshore staffing reliability — and what a real facility model looks like.</p>
+        <span class="guide-read-more">Read the guide →</span>
+      </a>
+      <a href="guides/ai-powered-vas.html" class="guide-card">
+        <span class="guide-tag">AI Workflows</span>
+        <h3>AI-Powered Virtual Assistants: How Smart Businesses Scale Faster</h3>
+        <p>How AI-trained VAs using ChatGPT, Claude, and Zapier deliver 2–3x output compared to untrained offshore workers.</p>
+        <span class="guide-read-more">Read the guide →</span>
+      </a>
+      <a href="guides/security-compliance.html" class="guide-card">
+        <span class="guide-tag">Security</span>
+        <h3>Data Security & Compliance When Hiring Filipino VAs</h3>
+        <p>IP protection, NDAs, network security, and tax compliance — everything you need to know before hiring offshore.</p>
+        <span class="guide-read-more">Read the guide →</span>
+      </a>
+      <a href="guides/build-remote-team.html" class="guide-card">
+        <span class="guide-tag">Strategy</span>
+        <h3>How to Build a Secure and Reliable Remote Team in the Philippines</h3>
+        <p>A step-by-step guide to building an offshore team that actually operates with consistency, accountability, and structure.</p>
+        <span class="guide-read-more">Read the guide →</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CTA
+════════════════════════════════════════ -->
+<section class="cta-section" id="contact" aria-label="Call to action">
+  <div class="container">
+    <div class="cta-box">
+      <div class="eyebrow" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.7);">
+        <span class="eyebrow-dot"></span>
+        Managed Operational Support
+      </div>
+      <h2>Build a More Reliable Remote Team</h2>
+      <p>Discuss your workflows, operational challenges, and staffing requirements with RankFixer. No hard sell — just a strategic conversation about what managed support could look like for your business.</p>
+      <a href="contact.html" class="btn-primary" style="font-size: 16px; padding: 18px 32px;">
+        Book a Free Consultation →
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">Rank<span>Fixer</span></a>
+        <p>Managed Filipino virtual assistants from a 200-seat TESDA-accredited facility in Bislig City, Philippines. Built for operational reliability.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About RankFixer</a></li>
+          <li><a href="about.html#facility">Our Facility</a></li>
+          <li><a href="about.html#training">TESDA Training</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="guides/managed-vs-freelance.html">Managed vs Freelance</a></li>
+          <li><a href="guides/filipino-va-pricing.html">VA Pricing Guide 2026</a></li>
+          <li><a href="guides/facility-vs-home.html">Facility vs Home-Based</a></li>
+          <li><a href="guides/ai-powered-vas.html">AI-Powered VAs</a></li>
+          <li><a href="guides/security-compliance.html">Security & Compliance</a></li>
+          <li><a href="guides/build-remote-team.html">Build a Remote Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="contact.html">Book a Consultation</a></li>
+          <li><a href="#comparison">Compare Models</a></li>
+          <li><a href="#infrastructure">Infrastructure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 RankFixer. Managed operational support built for reliability.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
