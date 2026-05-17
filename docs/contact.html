@@ -1,172 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build a More Reliable Operational Support System — RankFixer</title>
-    <meta name="description" content="Schedule a strategic operational consultation. Not a sales call — a structured discussion about workflows, delegation, and managed infrastructure.">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-bg pt-20">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-bg/90 backdrop-blur">
-    <div class="container-base flex h-20 items-center justify-between">
-        <a href="/" class="font-serif text-2xl font-bold tracking-tight text-text no-underline">
+    <title>Book a Consultation — RankFixer</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background: #F8F7F4;
+        }
+
+        .hero-dark {
+            background: #161311;
+            color: white;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .eyebrow-dark {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(255,255,255,0.04);
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.72);
+            margin-bottom: 28px;
+        }
+
+        .hero-title {
+            font-family: "Fraunces", serif;
+            font-size: clamp(58px, 6vw, 84px);
+            line-height: 0.94;
+            letter-spacing: -3px;
+            max-width: 760px;
+        }
+
+        .hero-copy {
+            margin-top: 36px;
+            max-width: 640px;
+            font-size: 20px;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.72);
+        }
+
+        .ops-panel {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 28px;
+            padding: 38px;
+            backdrop-filter: blur(10px);
+        }
+
+        .ops-label {
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 18px;
+        }
+
+        .ops-item {
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .ops-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .ops-name {
+            font-size: 14px;
+            color: rgba(255,255,255,0.58);
+            margin-bottom: 8px;
+        }
+
+        .ops-value {
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .timeline-section {
+            padding: 110px 0;
+        }
+
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 26px;
+        }
+
+        .timeline-card {
+            background: white;
+            border: 1px solid #ECE9E4;
+            border-radius: 22px;
+            padding: 34px;
+            min-height: 260px;
+        }
+
+        .timeline-number {
+            color: #C8490A;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .timeline-title {
+            font-family: "Fraunces", serif;
+            font-size: 30px;
+            line-height: 1.08;
+            margin-bottom: 18px;
+            color: #1A1714;
+        }
+
+        .timeline-copy {
+            color: #6B6762;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .form-section {
+            padding-bottom: 120px;
+        }
+
+        .consultation-shell {
+            background: white;
+            border: 1px solid #ECE9E4;
+            border-radius: 36px;
+            overflow: hidden;
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.03),
+                0 30px 80px rgba(0,0,0,0.04);
+        }
+
+        .consultation-grid {
+            display: grid;
+            grid-template-columns: 0.95fr 1.05fr;
+        }
+
+        .consultation-left {
+            background: #1A1714;
+            color: white;
+            padding: 72px 60px;
+        }
+
+        .consultation-right {
+            padding: 72px 60px;
+        }
+
+        .consultation-title {
+            font-family: "Fraunces", serif;
+            font-size: 52px;
+            line-height: 0.98;
+            letter-spacing: -2px;
+            margin-bottom: 28px;
+        }
+
+        .consultation-copy {
+            color: rgba(255,255,255,0.72);
+            line-height: 1.9;
+            font-size: 17px;
+            max-width: 460px;
+        }
+
+        .trust-list {
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .trust-item {
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.04);
+            border-radius: 18px;
+            padding: 20px;
+        }
+
+        .trust-item strong {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+
+        .trust-item span {
+            color: rgba(255,255,255,0.65);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .form-header {
+            margin-bottom: 42px;
+        }
+
+        .form-header h2 {
+            font-family: "Fraunces", serif;
+            font-size: 44px;
+            line-height: 1;
+            letter-spacing: -1.5px;
+            margin-bottom: 18px;
+            color: #1A1714;
+        }
+
+        .form-header p {
+            color: #6B6762;
+            line-height: 1.8;
+            font-size: 16px;
+            max-width: 520px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 22px;
+        }
+
+        .field-full {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1A1714;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            border: 1px solid #E8E6E3;
+            background: #FAFAF7;
+            border-radius: 14px;
+            padding: 18px 20px;
+            font-size: 15px;
+            color: #1A1714;
+            outline: none;
+            transition: 0.2s ease;
+        }
+
+        .form-group textarea {
+            min-height: 180px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #C8490A;
+            background: white;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 30px;
+            border: none;
+            cursor: pointer;
+            background: #C8490A;
+            color: white;
+            border-radius: 16px;
+            padding: 22px;
+            font-size: 16px;
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.92;
+        }
+
+        .form-note {
+            margin-top: 18px;
+            text-align: center;
+            color: #8B8681;
+            font-size: 13px;
+        }
+
+        @media (max-width: 1100px) {
+
+            .hero-grid,
+            .consultation-grid,
+            .timeline-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-title {
+                font-size: 62px;
+            }
+
+            .timeline-card {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .hero-dark {
+                padding-top: 40px;
+            }
+
+            .hero-title {
+                font-size: 46px;
+                letter-spacing: -2px;
+            }
+
+            .hero-copy {
+                font-size: 17px;
+            }
+
+            .consultation-left,
+            .consultation-right {
+                padding: 42px 28px;
+            }
+
+            .consultation-title {
+                font-size: 40px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .field-full {
+                grid-column: span 1;
+            }
+
+            .timeline-section {
+                padding: 72px 0;
+            }
+
+            .timeline-card {
+                padding: 28px;
+            }
+
+            .timeline-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="border-b border-border bg-bg/90 backdrop-blur">
+    <div class="container-base flex h-24 items-center justify-between">
+
+        <a href="/" class="font-serif text-3xl font-bold tracking-tight text-text">
             Rank<span class="text-accent">Fixer</span>
         </a>
-        <nav class="flex items-center gap-7">
-            <a href="/guides/managed-vs-freelance-virtual-assistant-philippines.html" class="text-sm font-semibold text-muted no-underline transition hover:text-text">Managed vs Freelance</a>
-            <a href="/guides/filipino-va-cost-pricing-guide.html" class="text-sm font-semibold text-muted no-underline transition hover:text-text">Pricing</a>
-            <a href="/about.html" class="text-sm font-semibold text-muted no-underline transition hover:text-text">About</a>
-            <a href="/contact.html" class="primary-btn">Book a Consultation</a>
+
+        <nav class="hidden items-center gap-10 md:flex">
+
+            <a href="/guides/managed-vs-freelance-virtual-assistant-philippines"
+               class="text-sm font-semibold text-muted transition hover:text-text">
+                Managed vs Freelance
+            </a>
+
+            <a href="/guides/filipino-va-cost-pricing-guide"
+               class="text-sm font-semibold text-muted transition hover:text-text">
+                Pricing
+            </a>
+
+            <a href="/about"
+               class="text-sm font-semibold text-muted transition hover:text-text">
+                About
+            </a>
+
+            <a href="/contact"
+               class="rounded-xl bg-accent px-7 py-4 text-sm font-semibold text-white transition hover:opacity-90">
+                Book a Consultation
+            </a>
+
         </nav>
+
     </div>
 </header>
 
-<!-- HERO — Editorial Dominance -->
-<section class="pt-24 pb-12">
-    <div class="container-base">
-        <div class="max-w-3xl">
-            <div class="eyebrow mb-8">Managed Operational Support</div>
-            <h1 class="text-[clamp(56px,8vw,88px)] leading-[0.92] tracking-[-2px] mb-8 text-text">
+<section class="hero-dark py-32">
+
+    <div class="container-base hero-grid">
+
+        <div>
+
+            <div class="eyebrow-dark">
+                Managed Operational Support
+            </div>
+
+            <h1 class="hero-title">
                 Build a More Reliable Operational Support System
             </h1>
-            <p class="text-lg text-muted max-w-lg leading-relaxed">
-                A structured discussion about your workflows, delegation opportunities, and how managed infrastructure provides operational continuity.
+
+            <p class="hero-copy">
+                RankFixer helps businesses build structured offshore operational support with managed oversight, facility-based infrastructure, and AI-integrated workflows designed for continuity.
             </p>
-        </div>
-    </div>
-</section>
 
-<!-- DARK SECTION — Operational Gravity -->
-<section class="bg-text text-white py-20">
-    <div class="container-base">
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-16">
-            
-            <div>
-                <div class="text-xs font-semibold text-white/40 tracking-wider mb-8 uppercase">Operational Standards</div>
-                <div class="space-y-8">
-                    <div>
-                        <div class="text-sm text-white/40 mb-1">Response Time</div>
-                        <div class="text-2xl font-bold">&lt; 1 Business Day</div>
-                    </div>
-                    <div>
-                        <div class="text-sm text-white/40 mb-1">Infrastructure Model</div>
-                        <div class="text-2xl font-bold">Facility-Based</div>
-                    </div>
-                    <div>
-                        <div class="text-sm text-white/40 mb-1">Workflow Oversight</div>
-                        <div class="text-2xl font-bold">Managed Operations</div>
-                    </div>
-                    <div>
-                        <div class="text-sm text-white/40 mb-1">Staffing Approach</div>
-                        <div class="text-2xl font-bold">Dedicated, Not Shared</div>
-                    </div>
-                </div>
+        </div>
+
+        <div class="ops-panel">
+
+            <div class="ops-label">
+                Operational Standards
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="bg-white/[0.06] rounded-2xl p-6">
-                    <div class="text-accent text-xs font-extrabold tracking-wider mb-4">01</div>
-                    <h3 class="font-serif text-lg font-semibold mb-2">Workflow Assessment</h3>
-                    <p class="text-sm text-white/50 leading-relaxed">We map your current operations and identify where structured support creates the most leverage.</p>
-                </div>
-                <div class="bg-white/[0.06] rounded-2xl p-6">
-                    <div class="text-accent text-xs font-extrabold tracking-wider mb-4">02</div>
-                    <h3 class="font-serif text-lg font-semibold mb-2">Infrastructure Overview</h3>
-                    <p class="text-sm text-white/50 leading-relaxed">Redundant internet, backup power, on-site management, AI-integrated workflows.</p>
-                </div>
-                <div class="bg-white/[0.06] rounded-2xl p-6">
-                    <div class="text-accent text-xs font-extrabold tracking-wider mb-4">03</div>
-                    <h3 class="font-serif text-lg font-semibold mb-2">Staffing Recommendation</h3>
-                    <p class="text-sm text-white/50 leading-relaxed">Skills required, team size, and integration approach based on your operations.</p>
-                </div>
-                <div class="bg-white/[0.06] rounded-2xl p-6">
-                    <div class="text-accent text-xs font-extrabold tracking-wider mb-4">04</div>
-                    <h3 class="font-serif text-lg font-semibold mb-2">Clear Next Steps</h3>
-                    <p class="text-sm text-white/50 leading-relaxed">Timelines, pricing, onboarding — all before any commitment.</p>
-                </div>
+            <div class="ops-item">
+                <div class="ops-name">Response Time</div>
+                <div class="ops-value">&lt; 1 Business Day</div>
+            </div>
+
+            <div class="ops-item">
+                <div class="ops-name">Infrastructure Model</div>
+                <div class="ops-value">Facility-Based</div>
+            </div>
+
+            <div class="ops-item">
+                <div class="ops-name">Workflow Oversight</div>
+                <div class="ops-value">Managed Operations</div>
+            </div>
+
+            <div class="ops-item">
+                <div class="ops-name">Staffing Model</div>
+                <div class="ops-value">Dedicated, Not Shared</div>
             </div>
 
         </div>
+
     </div>
+
 </section>
 
-<!-- FORM — Elevated, Floating -->
-<section class="relative -mt-12 pb-24">
+<section class="timeline-section">
+
     <div class="container-base">
-        <div class="max-w-lg mx-auto">
-            <div class="bg-surface rounded-3xl p-10 shadow-soft border border-border/50">
-                <h2 class="font-serif text-3xl font-semibold mb-1 text-text">Schedule a Consultation</h2>
-                <p class="text-muted mb-10 text-sm leading-relaxed">We respond within one business day. No commitment required.</p>
-                
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
-                    
-                    <div>
-                        <label for="name" class="block text-sm font-semibold text-text mb-2">Full Name</label>
-                        <input type="text" id="name" name="name" required 
-                            class="w-full px-4 py-3 rounded-lg border border-border/50 bg-[#FCFCFA] text-text text-sm focus:outline-none focus:border-accent transition"
-                            placeholder="Your name">
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block text-sm font-semibold text-text mb-2">Work Email</label>
-                        <input type="email" id="email" name="email" required 
-                            class="w-full px-4 py-3 rounded-lg border border-border/50 bg-[#FCFCFA] text-text text-sm focus:outline-none focus:border-accent transition"
-                            placeholder="you@company.com">
-                    </div>
-                    
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <label for="company" class="block text-sm font-semibold text-text mb-2">Company</label>
-                            <input type="text" id="company" name="company" 
-                                class="w-full px-4 py-3 rounded-lg border border-border/50 bg-[#FCFCFA] text-text text-sm focus:outline-none focus:border-accent transition"
-                                placeholder="Company name">
-                        </div>
-                        <div>
-                            <label for="role" class="block text-sm font-semibold text-text mb-2">Role Needed</label>
-                            <select id="role" name="role" 
-                                class="w-full px-4 py-3 rounded-lg border border-border/50 bg-[#FCFCFA] text-text text-sm focus:outline-none focus:border-accent transition">
-                                <option value="">Select</option>
-                                <option value="executive-assistant">Executive Assistant</option>
-                                <option value="administrative">Administrative Support</option>
-                                <option value="customer-support">Customer Support</option>
-                                <option value="seo-digital-marketing">SEO / Marketing</option>
-                                <option value="bookkeeping">Bookkeeping</option>
-                                <option value="multiple">Multiple Roles</option>
-                                <option value="exploring">Not Sure Yet</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="message" class="block text-sm font-semibold text-text mb-2">Operational Needs</label>
-                        <textarea id="message" name="message" rows="3" 
-                            class="w-full px-4 py-3 rounded-lg border border-border/50 bg-[#FCFCFA] text-text text-sm focus:outline-none focus:border-accent transition resize-none"
-                            placeholder="Briefly describe your workflows and what you're looking to delegate..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="primary-btn w-full text-base py-4 mt-2">
-                        Submit Request
-                    </button>
-                    
-                    <p class="text-xs text-muted text-center pt-2">
-                        No commitment. Response within one business day.
+
+        <div class="timeline-grid">
+
+            <div class="timeline-card">
+
+                <div class="timeline-number">01</div>
+
+                <div class="timeline-title">
+                    Workflow Assessment
+                </div>
+
+                <div class="timeline-copy">
+                    We map your current operations and identify where structured support creates the highest operational leverage.
+                </div>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-number">02</div>
+
+                <div class="timeline-title">
+                    Infrastructure Overview
+                </div>
+
+                <div class="timeline-copy">
+                    Understand our facility-based staffing model, operational oversight systems, and continuity infrastructure.
+                </div>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-number">03</div>
+
+                <div class="timeline-title">
+                    Staffing Recommendation
+                </div>
+
+                <div class="timeline-copy">
+                    We recommend a support structure aligned to your workflows, delegation needs, and operational requirements.
+                </div>
+
+            </div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-number">04</div>
+
+                <div class="timeline-title">
+                    Clear Next Steps
+                </div>
+
+                <div class="timeline-copy">
+                    Discuss onboarding, timelines, workflow integration, and operational continuity before any commitment.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="form-section">
+
+    <div class="container-base">
+
+        <div class="consultation-shell">
+
+            <div class="consultation-grid">
+
+                <div class="consultation-left">
+
+                    <h2 class="consultation-title">
+                        Schedule a Strategic Consultation
+                    </h2>
+
+                    <p class="consultation-copy">
+                        Every engagement begins with understanding your workflows, operational bottlenecks, and support requirements — not selling generic staffing packages.
                     </p>
-                </form>
+
+                    <div class="trust-list">
+
+                        <div class="trust-item">
+                            <strong>Facility-Based Operations</strong>
+                            <span>
+                                Structured environments with operational oversight and continuity systems.
+                            </span>
+                        </div>
+
+                        <div class="trust-item">
+                            <strong>AI Workflow Training</strong>
+                            <span>
+                                Teams trained in AI-assisted operational workflows and productivity systems.
+                            </span>
+                        </div>
+
+                        <div class="trust-item">
+                            <strong>Managed Accountability</strong>
+                            <span>
+                                Supervised staffing models focused on communication, reliability, and operational consistency.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="consultation-right">
+
+                    <div class="form-header">
+
+                        <h2>
+                            Consultation Request
+                        </h2>
+
+                        <p>
+                            Tell us about your workflows, operational needs, and the type of support structure you are exploring.
+                        </p>
+
+                    </div>
+
+                    <form>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label>Full Name</label>
+
+                                <input type="text" placeholder="Your name" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Work Email</label>
+
+                                <input type="email" placeholder="you@company.com" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Company</label>
+
+                                <input type="text" placeholder="Company or agency" />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Team Size</label>
+
+                                <select>
+                                    <option>Select size</option>
+                                    <option>1-3</option>
+                                    <option>4-10</option>
+                                    <option>11-25</option>
+                                    <option>25+</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group field-full">
+                                <label>Operational Needs</label>
+
+                                <textarea placeholder="Describe your workflows, operational bottlenecks, delegation needs, or support requirements."></textarea>
+                            </div>
+
+                        </div>
+
+                        <button class="submit-btn">
+                            Submit Consultation Request
+                        </button>
+
+                        <div class="form-note">
+                            No commitment required. Consultation requests are reviewed manually.
+                        </div>
+
+                    </form>
+
+                </div>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
 
-<footer class="border-t border-border py-9 bg-[#FCFCFA]">
-    <div class="container-base flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left">
-        <p class="text-muted text-sm">© 2026 RankFixer. Managed operational support built for reliability.</p>
-        <nav class="flex gap-5">
-            <a href="/about.html" class="text-muted text-sm font-semibold no-underline hover:text-text transition">About</a>
-            <a href="/guides/" class="text-muted text-sm font-semibold no-underline hover:text-text transition">Guides</a>
-            <a href="/contact.html" class="text-muted text-sm font-semibold no-underline hover:text-text transition">Contact</a>
-        </nav>
+<footer class="border-t border-border py-10">
+    <div class="container-base flex flex-col items-center justify-between gap-6 md:flex-row">
+
+        <div class="text-sm text-muted">
+            © 2026 RankFixer. Managed operational support built for reliability.
+        </div>
+
+        <div class="flex items-center gap-8">
+
+            <a href="/about"
+               class="text-sm font-semibold text-muted transition hover:text-text">
+                About
+            </a>
+
+            <a href="/guides"
+               class="text-sm font-semibold text-muted transition hover:text-text">
+                Guides
+            </a>
+
+            <a href="/contact"
+               class="text-sm font-semibold text-muted transition hover:text-text">
+                Contact
+            </a>
+
+        </div>
+
     </div>
 </footer>
 
